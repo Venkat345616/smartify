@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+  }
+  body{
+    background-color: #e7e8e7;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    
+  }
+  .main-container .sub-container{
+    width: 300px;
+    height: 410px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 10px rgb(157, 157, 157);
+
+    
+  }
+  .main-container .sub-container .photo img{
+    width: 150px;
+    height: 210px;
+  }
+  .main-container .sub-container .photo{
+    display: grid;
+    justify-content: center;
+  }
+  .main-container .sub-container .product-name{
+    font-size: 18px;
+    font-weight: 500;
+    padding:5px;
+    color: #1b4d89;
+  }
+  .main-container .sub-container .rating{
+    font-size: 20px;
+    color: #f9e45b;
+  }
+  .main-container .sub-container .price{
+    
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .main-container .sub-container .price h6{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .main-container .sub-container .price .org{
+    color: gray;
+    text-decoration: line-through;
+  }
+  .main-container .sub-container .price .off{
+    color: #1b4d89;
+  }
+  .main-container .sub-container .kart{
+    border:2px solid #6db784;
+    background-color: #6bc1861d;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+   
+    border-radius: 5px;
+  }
+  .main-container .sub-container:hover{
+    transform: scale(1.02);
+  }
+  .main-container .sub-container .kart button{
+    background-color: transparent;
+    border: none;
+    color: #6db784;
+    font-size: 18px;
+
+  }
+  .main-container .sub-container .kart:hover{
+    background-color: #6db784;
+  }
+  .main-container .sub-container .kart:hover button{
+    color: white;
+  }
+  .main-container .sub-container:hover .photo img{
+    transform: scale(1.05);
+  }
+
+
+  
